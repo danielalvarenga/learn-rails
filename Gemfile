@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
@@ -43,3 +44,41 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+
+# learn-rails
+
+# Ajuda a usar Rails sem um banco de dados
+gem 'activerecord-tableless'
+
+# Estrutura de configuração
+gem 'figaro'
+
+# Acesso ao MailChimp API
+gem 'gibbon'
+
+# Usar planilhas do Google Drive para armazenamento de dados
+gem 'google_drive'
+
+# Para páginas estáticas, como "about"
+gem 'high_voltage'
+
+# Criar formulários mais fácil
+gem 'simple_form'
+
+# Apoio para a ZURB Foundation
+gem 'compass-rails', '~> 2.0.alpha.0'
+
+# Framework front-end ZURB Foundation
+gem 'zurb-foundation'
+group :development do
+  # ajuda quando as coisas dão errado
+  gem 'better_errors'
+
+  #suprime as mensagens de distração no log
+  gem 'quiet_assets'
+
+  #gera arquivos para um layout de aplicação
+  gem 'rails_layout'
+end
